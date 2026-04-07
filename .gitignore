@@ -24,6 +24,7 @@ frontend/.env.*
 
 # ── VS Code ───────────────────────────────────────────────────
 .vscode/
+*.code-workspace
 
 # ── OS ────────────────────────────────────────────────────────
 .DS_Store
@@ -31,3 +32,7 @@ Thumbs.db
 
 # ── Logs ──────────────────────────────────────────────────────
 *.log
+
+# ── Pytest artifacts (NOT the test files themselves) ──────────
+.pytest_cache/
+backend/test.db
