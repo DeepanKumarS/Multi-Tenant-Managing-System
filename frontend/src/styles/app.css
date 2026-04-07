@@ -1,0 +1,270 @@
+/* ── MTMS Enterprise Design System ─────────────────────── */
+
+:root {
+  --primary: #1e3a5f;
+  --accent: #2563eb;
+  --success: #059669;
+  --danger: #dc2626;
+  --warning: #d97706;
+  --bg: #f0f4f8;
+  --surface: #ffffff;
+  --border: #d1d9e0;
+  --text: #1a202c;
+  --text-muted: #64748b;
+  --radius: 8px;
+}
+
+/* ── Base ───────────────────────────────────────────────── */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+}
+
+h2, h3, h4 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ── Auth / Card Form ───────────────────────────────────── */
+.card-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-form h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 12px;
+  display: block;
+}
+
+.card-form input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.card-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.card-form p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+
+/* ── Navbar ────────────────────────────────────────────── */
+.navbar {
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-role {
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Page Wrapper ───────────────────────────────────────── */
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+/* ── User Info Banner ───────────────────────────────────── */
+.user-info {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 20px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.user-info strong {
+  color: var(--primary);
+}
+
+/* ── Section Card ───────────────────────────────────────── */
+.section-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.section-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-card-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* ── Assign Form ────────────────────────────────────────── */
+.assign-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  margin-top: 12px;
+}
+
+.assign-form label {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.assign-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.assign-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.assign-form-actions {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+/* ── Tenant Assignment Row ──────────────────────────────── */
+.tenant-row {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-top: 10px;
+  background: #f8fafc;
+}
+
+.tenant-row strong {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.btn:hover { opacity: 0.88; }
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.btn-full { width: 100%; justify-content: center; margin-top: 16px; }
+
+.btn-primary  { background: var(--primary); color: #fff; }
+.btn-accent   { background: var(--accent);  color: #fff; }
+.btn-success  { background: var(--success); color: #fff; }
+.btn-danger   { background: var(--danger);  color: #fff; }
+.btn-warning  { background: var(--warning); color: #fff; }
+.btn-ghost    { background: transparent; color: var(--primary); border: 1px solid var(--border); }
+
+/* ── Table ──────────────────────────────────────────────── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+.data-table th {
+  background: var(--primary);
+  color: #fff;
+  text-align: left;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.data-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-table tbody tr:hover {
+  background: #f5f8ff;
+}
+
+.data-table tfoot td {
+  background: #f0f4f8;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  padding: 8px 14px;
+}

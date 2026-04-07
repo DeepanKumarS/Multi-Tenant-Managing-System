@@ -1,0 +1,33 @@
+# ── Python / FastAPI ────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.env
+.env
+.env.*
+
+# ── Database ─────────────────────────────────────────────────
+*.sqlite3
+*.db
+
+# ── Node / React / Vite ──────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+
+# ── VS Code ───────────────────────────────────────────────────
+.vscode/
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
